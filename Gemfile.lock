@@ -1,0 +1,43 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    equalizer (0.0.11)
+    inflecto (0.0.2)
+    pg (0.18.2)
+    rack (1.6.4)
+    roda (2.5.1)
+      rack
+    rom (0.9.1)
+      equalizer (~> 0.0, >= 0.0.9)
+      rom-mapper (~> 0.2, >= 0.2.0)
+      rom-support (~> 0.1, >= 0.1.0)
+      transproc (~> 0.3, >= 0.3.0)
+    rom-mapper (0.2.0)
+      equalizer (~> 0.0, >= 0.0.10)
+      rom-support (~> 0.1, >= 0.1.0)
+      transproc (~> 0.3)
+    rom-roda (0.2.0)
+      inflecto
+      rom (~> 0.9, >= 0.9.0)
+    rom-sql (0.6.0)
+      equalizer (~> 0.0, >= 0.0.9)
+      rom (~> 0.9, >= 0.9.0)
+      sequel (~> 4.18)
+    rom-support (0.1.0)
+      wisper (~> 1.6, >= 1.6.0)
+    sequel (4.26.0)
+    transproc (0.3.2)
+    wisper (1.6.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pg
+  roda
+  rom
+  rom-roda
+  rom-sql
+
+BUNDLED WITH
+   1.10.5
